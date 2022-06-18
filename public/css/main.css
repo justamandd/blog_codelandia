@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --white: #FFF;
+    --white-200: #F9F9F9;
+    --gray: #717171;
+    --gray-dark: #1A202C;
+    --purple: #574AE8;
+    --purple-blue-gradient: linear-gradient(135deg , #574AE8 0%, #3EA1DB 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5F7;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.container {
+    width: 50%;
+    margin-left: 25%;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    background: var(--purple-blue-gradient);
+    color: var(--white);
+    margin-bottom: 100px;
+}
+
+.header-title {
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 24px;
+}
+
+#header-container {
+    height: 168px;
+    padding: 41px 0;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.search-box {
+    width: 100%;
+    height: 36%;
+    background-color: rgba(256, 256, 256, .20);
+    border-radius: 5px;
+}
+
+.search-box-icon {
+    font-size: 25px;
+    margin: 17px 18px;
+    color: var(--white-200);
+    cursor: pointer;
+}
+
+#search-box-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgba(256, 256, 256, 0);
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: var(--white-200);
+}
+
+#search-box-input::placeholder{
+    color: rgba(256, 256, 256, .50);
+}
+
+section {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.card-info {
+    justify-content: space-between;
+}
+
+.card-header-date {
+    color: var(--gray);
+    font-size: 16px;
+}
+
+.card-header {
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+.card-resume {
+    font-size: 18px;
+    color: var(--gray);
+    margin-top: 8px;
+}
+
+.like-button {
+    font-size: 25px;
+    color: var(--purple);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 75%;
+        margin-left: 12.5%;
+    }
+}
+
+
